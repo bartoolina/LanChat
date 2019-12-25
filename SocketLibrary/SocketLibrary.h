@@ -1,7 +1,3 @@
 #pragma once
-
-
-namespace SocketLibrary
-{
-	int ReturnFive();
-}
+#include "Network.h"
+#include "Log.h"

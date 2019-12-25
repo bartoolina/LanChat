@@ -1,4 +1,4 @@
-//Client
+//Server
 #include <SocketLibrary/SocketLibrary.h>
 
 using namespace SocketLibrary;
@@ -7,14 +7,13 @@ int main()
 {
 	if (Network::Initialize() == true)
 	{
-		Log::Print("[CLIENT] Winsok zostal zainicjolizowany. Mozemy dzialac.");
+		Log::Print("[SERVER] Winsok zostal zainicjolizowany. Mozemy dzialac.");
 	}
 
-
+	
 	Network::Shutdown();
 	return 0;
 }
-
 
 //(VC++ Directories) Add Include Dir -> Solution Dir
 //(VC++ Directories) Add Library Dir -> Output Dir
