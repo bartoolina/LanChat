@@ -24,12 +24,27 @@
     <ClInclude Include="Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ipVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketOption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Network.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

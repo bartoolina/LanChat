@@ -1,12 +1,14 @@
 #include <iostream>
 #include "Log.h"
+#include "Result.h"
+#include "ipVersion.h"
 
 void SocketLibrary::Log::Print(std::string message)
 {
-	std::cout << message << std::endl;
+	std::cout << "[LOG] " << message << std::endl;
 }
 
 void SocketLibrary::Log::PrintError(std::string message, int error)
 {
-	std::cerr << "[Error Code: " << error << "] "<< message << std::endl;
+	std::cerr << "[ERROR] " << "[Error Code: " << error << "] "<< message << std::endl;
 }

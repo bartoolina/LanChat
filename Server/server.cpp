@@ -8,6 +8,16 @@ int main()
 	if (Network::Initialize() == true)
 	{
 		Log::Print("[SERVER] Winsok zostal zainicjolizowany. Mozemy dzialac.");
+		Socket socket;
+		if (socket.Create() == Result::Success)
+		{
+			Log::Print("[SERVER] Utworzylem gniazdo.");
+			socket.Close();
+		}
+		else
+		{
+			Log::PrintError("[SERVER] Nie udalo mi sie utworzyc gniazda.", -1);
+		}
 	}
 
 	
