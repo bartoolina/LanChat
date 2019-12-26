@@ -36,6 +36,12 @@
     <ClInclude Include="SocketOption.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Endpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Network.cpp">
@@ -45,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Endpoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

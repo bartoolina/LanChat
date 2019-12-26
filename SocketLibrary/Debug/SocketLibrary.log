@@ -1,2 +1,3 @@
 ﻿  Socket.cpp
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\SocketLibrary\Socket.cpp(239,27): warning C4018: '<': signed/unsigned mismatch
   SocketLibrary.vcxproj -> C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\SocketLibrary.lib
