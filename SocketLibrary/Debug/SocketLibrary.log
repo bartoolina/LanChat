@@ -1,8 +1,9 @@
-﻿  Connection.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SocketLibrary (conflicted copy 2020-01-10 083214).vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Connection.cpp
   Endpoint.cpp
   Log.cpp
   Message.cpp
   Network.cpp
   Socket.cpp
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\SocketLibrary\Message.cpp(66,14): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
-  SocketLibrary.vcxproj -> C:\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\SocketLibrary.lib
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\SocketLibrary\Message.cpp(66,14): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+  SocketLibrary.vcxproj -> C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\SocketLibrary.lib

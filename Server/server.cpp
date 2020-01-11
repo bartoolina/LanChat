@@ -267,30 +267,6 @@ Result Server::IncomingConnection()
 							findedClient->listening = clientPortListenning;
 							Log::Print("Odebralem port nasluchiwania klienta. [" + findedClient->listening.GetIpString() + ":" + std::to_string(findedClient->listening.GetPort()) + "]");
 
-							//std::string newClientPort = std::to_string(findedClient->listening.GetPort());
-							//for (auto Client : connections)
-							//{
-							//	
-							//	// wysyla adresy (porty) do uzytkownikow
-							//	if (Client.connection.GetSocket() != findedClient->connection.GetSocket())
-							//	{
-							//		Message oldClient;
-							//		std::string msgToOtherClients = oldClient.PrepareCommand(newClientPort, "server", Command::Adress);
-							//		if (Client.connection.SendAll(msgToOtherClients.c_str(), msgToOtherClients.size()) != Result::Success)
-							//		{
-							//			// cos poszlo nie tak
-							//		}
-
-							//		Message newClient;
-							//		std::string oldClientPort = std::to_string(Client.listening.GetPort());
-							//		std::string msgToNewClient = newClient.PrepareCommand(oldClientPort, "server", Command::Adress);
-							//		if (findedClient->connection.SendAll(msgToNewClient.c_str(), msgToNewClient.size()) != Result::Success)
-							//		{
-							//			// cos poszlo nie tak
-							//		}
-							//	}
-							//	
-							//}
 							break;
 						}
 						case Command::ConnCheck:
@@ -338,45 +314,13 @@ Result Server::CheckConnection()
 
 		msgSize << std::setw(3) << std::setfill('0') << msg.size();
 		msg = msgSize.str() + " " + msg;
-		broadcastSenderUDP.SendUDP(msg, ownEndpoint);
+		if (broadcastSenderUDP.SendUDP(msg, ownEndpoint) == Result::Success)
+		{
+			Log::Print("Wyslalem informacje o adresie serwera przez UDP.");
+		}
 
 	}
-
-	/*for (auto client : connections)
-	{
-		Message chkMsg;
-		std::string msg = chkMsg.PrepareCommand("", "server", Command::ConnCheck);
-		if (client.lastActiveTime + 10 < time(NULL))
-		{
-			client.connection.SendAll(msg.c_str(), msg.size());
-
-		}
-	}*/
 
 	return Result();
 }
 
-
-
-//for (auto sock = connections.begin(); sock != connections.end(); sock++)
-//{
-//
-//	if (sock->GetSocket() == copy_fd.fd_array[i])
-//	{
-//		switch (sock->ReciveAll(recivedMessage, bytesRecived))
-//		{
-//		case Result::ConnectionLost:
-//			FD_CLR(sock->GetSocket(), &master_fd);
-//			connections.erase(sock);
-//			sock->Close();
-//			break;
-//
-//		case Result::Success:
-//
-//		case Result::Fail:
-//
-//		default:
-//			break;
-//		}
-//	}
-//}

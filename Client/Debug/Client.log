@@ -1,13 +1,14 @@
-﻿  client.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Client (conflicted copy 2020-01-10 083219).vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  client.cpp
   main.cpp
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(216,26): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(221,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(416,18): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(462,20): warning C4018: '<': signed/unsigned mismatch
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(467,26): warning C4244: '+=': conversion from 'std::streamsize' to 'int', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(468,27): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(481,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\main.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(76): warning C4715: 'Client::Initialize': not all control paths return a value
-C:\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(322): warning C4715: 'Client::CheckConnection': not all control paths return a value
-  Client.vcxproj -> C:\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\Client.exe
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(216,26): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(221,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(416,18): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(462,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(467,26): warning C4244: '+=': conversion from 'std::streamsize' to 'int', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(468,27): warning C4244: 'argument': conversion from 'std::streamsize' to 'const unsigned int', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(481,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\main.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(76): warning C4715: 'Client::Initialize': not all control paths return a value
+C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Client\client.cpp(322): warning C4715: 'Client::CheckConnection': not all control paths return a value
+  Client.vcxproj -> C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\Client.exe

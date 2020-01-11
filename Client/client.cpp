@@ -275,7 +275,7 @@ Result Client::CheckConnection()
 							newClient.listening = clientPortListenning;
 							newClient.name = recived.GetName();
 							availableClients.push_back(newClient);
-							std::cout << newClient.name << " zalogowal sie." << std::endl;
+							std::cout << newClient.name << " jest dostepny." << std::endl;
 						}
 							break;
 						case Command::ConnCheck:
