@@ -142,19 +142,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Connection.h" />
     <ClInclude Include="Endpoint.h" />
     <ClInclude Include="ipVersion.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="Message.h" />
     <ClInclude Include="Network.h" />
+    <ClInclude Include="Packet.h" />
     <ClInclude Include="Protocol.h" />
     <ClInclude Include="Result.h" />
     <ClInclude Include="Socket.h" />
     <ClInclude Include="SocketLibrary.h" />
     <ClInclude Include="SocketOption.h" />
+    <ClInclude Include="TypeOfConnection.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Connection.cpp" />
     <ClCompile Include="Endpoint.cpp" />
     <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Message.cpp" />
     <ClCompile Include="Network.cpp" />
     <ClCompile Include="Socket.cpp" />
   </ItemGroup>

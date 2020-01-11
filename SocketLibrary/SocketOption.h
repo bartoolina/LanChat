@@ -6,5 +6,6 @@ namespace SocketLibrary
 	{
 		TCP_NoDelay,
 		UDP_Broadcast,
+		UDP_Reuseaddr
 	};
 }

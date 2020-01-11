@@ -1,3 +1,8 @@
-﻿  Socket.cpp
-C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\SocketLibrary\Socket.cpp(239,27): warning C4018: '<': signed/unsigned mismatch
-  SocketLibrary.vcxproj -> C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\SocketLibrary.lib
+﻿  Connection.cpp
+  Endpoint.cpp
+  Log.cpp
+  Message.cpp
+  Network.cpp
+  Socket.cpp
+C:\MyCode\Cpp\VisualStudio_lap\LanChat\SocketLibrary\Message.cpp(66,14): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+  SocketLibrary.vcxproj -> C:\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\SocketLibrary.lib

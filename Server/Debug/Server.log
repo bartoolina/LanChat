@@ -1,1 +1,4 @@
-﻿  Server.vcxproj -> C:\Users\bartool\MyData\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\Server.exe
+﻿  main.cpp
+  server.cpp
+C:\MyCode\Cpp\VisualStudio_lap\LanChat\Server\server.cpp(328): warning C4715: 'Server::IncomingConnection': not all control paths return a value
+  Server.vcxproj -> C:\MyCode\Cpp\VisualStudio_lap\LanChat\Debug\Server.exe

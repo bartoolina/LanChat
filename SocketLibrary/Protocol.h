@@ -2,11 +2,11 @@
 
 namespace SocketLibrary
 {
-
 	enum class Protocol
 	{
 		Unknown,
 		TCP,
-		UDP
+		UDP_Sender,
+		UDP_Reciver
 	};
 }

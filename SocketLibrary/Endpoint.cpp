@@ -5,17 +5,37 @@
 
 using namespace SocketLibrary;
 
+Endpoint::Endpoint()
+{
+	char ip[16];
+	sockaddr_in newaddr;
+	newaddr.sin_family = AF_INET;
+	newaddr.sin_port = 0;
+	newaddr.sin_addr.S_un.S_addr = INADDR_NONE;
+
+//	sockaddr_in* newaddr;
+	_ipversion = IPVersion::IPv4;
+	_port = ntohs(newaddr.sin_port);
+	//_ip_string.resize(16);
+	inet_ntop(AF_INET, &newaddr.sin_addr, /*&_ip_string[0]*/ ip, 16);
+	//_ip_string.erase(_ip_string.find('\0'));
+	_ip_string = ip;
+	_hostname = _ip_string;
+
+	_socketaddr = newaddr;
+}
+
 Endpoint::Endpoint(const char* ip, unsigned short port)
 {
-	this->_port = port;
+	_port = port;
 
 	in_addr addr;
 	int result = inet_pton(AF_INET, ip, &addr);
 
 	if (result == 1)
 	{
-		if (addr.S_un.S_addr != INADDR_NONE)
-		{
+//		if (addr.S_un.S_addr != INADDR_NONE)
+//		{
 			_ip_string = ip;
 			_hostname = ip;
 			_ipversion = IPVersion::IPv4;
@@ -25,7 +45,7 @@ Endpoint::Endpoint(const char* ip, unsigned short port)
 			memcpy(&_socketaddr.sin_addr, &addr, sizeof(in_addr));
 			
 			return;
-		}
+//		}
 	}
 	else
 	{
@@ -37,11 +57,13 @@ Endpoint::Endpoint(const char* ip, unsigned short port)
 Endpoint::Endpoint(sockaddr* addr)
 {
 	assert(addr->sa_family == AF_INET);
+	char ip[16];
 	sockaddr_in* newaddr = (sockaddr_in*)addr;
 	_ipversion = IPVersion::IPv4;
 	_port = ntohs(newaddr->sin_port);
-	_ip_string.resize(16);
-	inet_ntop(AF_INET, &newaddr->sin_addr, &_ip_string[0], 16);
+	//_ip_string.resize(16);
+	inet_ntop(AF_INET, &newaddr->sin_addr, ip, 16);
+	_ip_string = ip;
 	_hostname = _ip_string;
 }
 

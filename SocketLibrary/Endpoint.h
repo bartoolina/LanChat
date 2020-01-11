@@ -1,5 +1,5 @@
 #pragma once
-#include <string>
+#include <sstream>
 #include <WS2tcpip.h>
 #include "ipVersion.h"
 
@@ -8,6 +8,7 @@ namespace SocketLibrary
 	class Endpoint
 	{
 	public:
+		Endpoint();
 		Endpoint(const char* ip, unsigned short port);
 		Endpoint(sockaddr* addr);
 		IPVersion GetIpVersion();

@@ -5,6 +5,7 @@ namespace SocketLibrary
 	enum class Result
 	{
 		Success,
-		Fail
+		Fail,
+		ConnectionLost,
 	};
 }
